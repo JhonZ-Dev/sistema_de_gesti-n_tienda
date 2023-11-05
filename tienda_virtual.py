@@ -71,6 +71,11 @@ if __name__ == "__main__":
             quantity = int(input(f"Enter the quantity of {name} you want to purchase: "))
             result = store.purchase_product(name, quantity)
             print(result)
+        elif choice == "4":
+            inventory = store.check_inventory()
+            print("Inventory:")
+            for item in inventory:
+                print(item)
 
 
         

@@ -84,6 +84,8 @@ if __name__ == "__main__":
             print("Purchase history saved to 'purchase_history.txt'.")
             print("Goodbye!")
             break
+        else:
+            print("Invalid option. Please select a valid option.")
 
 
         

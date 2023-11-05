@@ -36,6 +36,11 @@ class Store:
             return f"Sorry, only {product.stock} {product.name}(s) available."
         else:
             return "Product not found."
+    
+    def check_inventory(self):
+        """Método que permite revisar el inventario de la tienda."""
+        return [f"{product.name} - Stock: {product.stock}" for product in self.products]
+
         
     
 

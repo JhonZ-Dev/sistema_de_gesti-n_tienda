@@ -16,4 +16,6 @@ class Store:
     def add_product(self, name, price, stock):
         product = Product(name, price, stock)
         self.products.append(product)
+    def list_products(self):
+        return [f"{product.name} - Price: ${product.price} - Stock: {product.stock}" for product in self.products]
 

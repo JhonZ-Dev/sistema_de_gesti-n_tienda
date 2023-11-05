@@ -55,6 +55,12 @@ if __name__ == "__main__":
         print("5. Quit")
         
         choice = input("Select an option: ")
+        if choice == "1":
+            name = input("Enter the product name: ")
+            price = float(input("Enter the product price: "))
+            stock = int(input("Enter the product stock: "))
+            store.add_product(name, price, stock)
+            print("Product added.")
 
 
         

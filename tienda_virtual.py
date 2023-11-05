@@ -61,6 +61,12 @@ if __name__ == "__main__":
             stock = int(input("Enter the product stock: "))
             store.add_product(name, price, stock)
             print("Product added.")
+        elif choice == "2":
+            products = store.list_products()
+            print("Products:")
+            for product in products:
+                print(product)
+
 
 
         

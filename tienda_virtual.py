@@ -66,7 +66,11 @@ if __name__ == "__main__":
             print("Products:")
             for product in products:
                 print(product)
-
+        elif choice == "3":
+            name = input("Enter the product name you want to purchase: ")
+            quantity = int(input(f"Enter the quantity of {name} you want to purchase: "))
+            result = store.purchase_product(name, quantity)
+            print(result)
 
 
         

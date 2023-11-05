@@ -43,14 +43,19 @@ class Store:
 
 if __name__ == "__main__":
     store = Store()
+    """store.add_product("Camisa", 5000, 50)"""
 
     while True:
+        #ciclo que permite mostrar el menú de opciones
         print("Options:")
         print("1. Add a product")
         print("2. List products")
         print("3. Purchase a product")
         print("4. Check inventory")
         print("5. Quit")
+        
+        choice = input("Select an option: ")
+
 
         
     

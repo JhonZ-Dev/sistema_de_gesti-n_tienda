@@ -26,5 +26,17 @@ class Store:
     def purchase_product(self, name, quantity):
         """Método que permite comprar un producto de la tienda."""
         product = next((p for p in self.products if p.name.lower() == name.lower()), None)
+        
+        if product and product.stock >= quantity:
+            product.stock -= quantity
+            purchase_total = product.price * quantity
+            self.purchase_history.append((product.name, quantity, purchase_total))
+            return f"You purchased {quantity} {product.name}(s) for ${purchase_total}."
+        elif product and product.stock < quantity:
+            return f"Sorry, only {product.stock} {product.name}(s) available."
+        else:
+            return "Product not found."
+        
+    
 
 

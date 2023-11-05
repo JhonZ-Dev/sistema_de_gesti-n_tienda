@@ -8,4 +8,9 @@ class Product:
 
 class Store:
     """Clase que representa una tienda en general."""
+    def __init__(self):
+        """Constructor de la clase Store."""
+        self.products = []
+        self.purchase_history = []
+        
     

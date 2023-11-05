@@ -76,6 +76,14 @@ if __name__ == "__main__":
             print("Inventory:")
             for item in inventory:
                 print(item)
+        elif choice == "5":
+            # Save purchase history to a file
+            with open("purchase_history.txt", "w") as file:
+                for item in store.purchase_history:
+                    file.write(f"Product: {item[0]}, Quantity: {item[1]}, Total: ${item[2]}\n")
+            print("Purchase history saved to 'purchase_history.txt'.")
+            print("Goodbye!")
+            break
 
 
         

@@ -13,4 +13,7 @@ class Store:
         self.products = []
         self.purchase_history = []
         
-    
+    def add_product(self, name, price, stock):
+        product = Product(name, price, stock)
+        self.products.append(product)
+

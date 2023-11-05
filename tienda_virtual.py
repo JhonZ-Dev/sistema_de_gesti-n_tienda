@@ -5,3 +5,7 @@ class Product:
         self.name = name
         self.price = price
         self.stock = stock
+
+class Store:
+    """Clase que representa una tienda en general."""
+    
